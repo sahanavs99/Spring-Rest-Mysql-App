@@ -28,7 +28,7 @@ public class CentralExceptionManager {
 	 @ExceptionHandler(value = DatabaseException.class)
 	 public ResponseEntity<String> handleDatabaseException(DatabaseException ex){
 		System.out.println("\n\n***HandleDatabaseException\n\n");
-		 String message ="The DataBase server is NOT available";
+		 String message ="The DataBase mysql server is NOT available";
 		 return new ResponseEntity<String>(message,HttpStatus.OK);
 	 }
 }
